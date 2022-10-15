@@ -1,0 +1,66 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    overflow:hidden;
+} 
+
+#bob {
+    width: 50px;
+    height: 50px;
+    background-image: url("bob.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+      top: 150px;
+    }
+    
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+@keyframes hamb {
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+#hamb {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top:125px;
+    left: 600px;
+
+    background-image: url("hamb.png");
+    background-size: 40px 30px;
+
+    animation: hamb 3.5s infinite linear;
+    z-index: 1;
+}
+

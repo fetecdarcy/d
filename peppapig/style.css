@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.game {
+  position: relative;
+  border: 1px solid;
+  height: 300px;
+  width: 800px;
+  background-image: url(img/cenario-dino.png);
+  overflow: hidden;
+}
+
+.score {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#dino {
+  position: absolute;
+  bottom: 75px;
+  background-image: url(https://i.pinimg.com/originals/4e/12/90/4e129076761212c7893ed7109d00c5ef.png);
+  width: 129px;
+  height: 140px;
+  background-size: 129px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  margin: 0;
+}
+
+#cacto {
+  position: absolute;
+  bottom: 35px;
+  margin: 0;
+  background-image: url(img/cacto.png);
+  width: 324px;
+  height: 72px;
+  background-size: 81px;
+  background-repeat: no-repeat;
+  animation: cacto 1.5s linear infinite;
+}
+
+
+@keyframes cacto {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 800px;
+  }
+}
+
+.jump {
+  animation: jump 0.8s linear;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 75px;
+  }
+
+  20% {
+    bottom: 95px;
+  }
+  30% {
+    bottom: 110px;
+  }
+
+  45% {
+    bottom: 120px;
+  }
+
+  60% {
+    bottom: 110px;
+  }
+
+  85% {
+    bottom: 95px;
+  }
+
+  100% {
+    bottom: 75px;
+  }
+}

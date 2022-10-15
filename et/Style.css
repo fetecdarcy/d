@@ -1,0 +1,80 @@
+.game {
+    width: 600px;
+    height:200px;
+    border: 5px solid black;
+    margin: auto;
+    background-color: black;
+}
+
+#et {
+    width:100px;
+    height:100px;
+    background-image: url(alien.png);
+    background-size: 100px 100px;
+    position: relative;
+    top: 100px;
+    left: 10px
+}
+
+.jump {
+    animation: jump 0.2s linear;
+}
+
+@keyframes jump {
+    0% {
+        top:100px;
+    }
+
+    30% {
+        top:60px;
+    }
+
+    50% {
+        top:30px;  
+    }
+
+    80% {
+        top:60px;
+    }
+
+    100% {
+        top:100px;
+    }
+}
+
+
+#ast {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    left:550px;
+
+    background-image: url(asteroids.png);
+    background-size: 40px 40px;
+
+    animation: slide 2.0s infinite linear;
+}
+
+@keyframes slide {
+    
+0% {
+    left: 600px;
+}
+
+25% {
+    left: 450px;
+}
+
+50% {
+    left:300px;
+}
+
+75% {
+    left: 150px;
+}
+
+100% {
+    left:-40px;
+}
+}

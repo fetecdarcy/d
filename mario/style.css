@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #12a726;
+}
+
+.game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #0f0f0f;
+    margin: auto;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.jump {
+    animation: jump 0.3s infinite ;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dino.gif);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+#cacto {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 600px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    animation: slide 2.5s infinite linear;
+}
+
+@keyframes slide {
+
+    0% {
+        left: 600px;
+    }
+
+    100% {
+        left: -20px;
+    }
+    
+}
+
+@keyframes jump {
+
+    0% {
+        top: 150px;
+    }
+
+    20% {
+        top: 100px;
+    }
+
+    30% {
+        top: 80px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    70% {
+        top: 80px;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+
+}
